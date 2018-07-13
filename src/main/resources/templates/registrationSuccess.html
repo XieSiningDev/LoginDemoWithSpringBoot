@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration success</title>
+</head>
+<body>
+<p>Registration succeeded. you will return to login page in <span id="second"></span> second</p>
+<script type="text/javascript">
+    let s = document.getElementById("second");
+    let count = 5;
+    setInterval("refer()", 1000);
+    function refer() {
+        if (count === 0) {
+            location = "http://localhost:8080";
+        }
+        s.innerText = '' + count;
+        count--;
+    }
+</script>
+</body>
+</html>

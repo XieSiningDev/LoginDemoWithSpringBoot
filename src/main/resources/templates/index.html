@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            text-align: center;
+            float: left;
+        }
+        body {
+            background-color: #44cc55;
+        }
+    </style>
+</head>
+<body>
+<h1>Login Page</h1>
+<form action="/login" method="post">
+    Username: <label>
+    <input type="text" name="userName" required>
+</label> <br />
+    password: <label>
+    <input type="password" name="password" required>
+</label> <br />
+    <input type="submit" value="Submit">
+</form>
+<form action="/registration" method="get">
+    <input type="submit" value="Registry">
+</form>
+</body>
+</html>
